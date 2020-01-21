@@ -19,7 +19,7 @@ class FizzBuzz extends React.Component {
     _getFizzBuzzList = () => {
         let fizzBuzzList = [];
         for(let i=FizzBuzzConst.FIZZ_BUZZ_MIN_NUM; i<=FizzBuzzConst.FIZZ_BUZZ_MAX_NUM; i++){
-            fizzBuzzList.push(<li key={i}>{i}</li>);
+            fizzBuzzList.push(<li key={i}>{this._checkFizzBuzz(i)}</li>);
         }
         return fizzBuzzList;
     }

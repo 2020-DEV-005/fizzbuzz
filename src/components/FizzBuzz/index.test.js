@@ -27,4 +27,11 @@ describe("App component", () => {
     expect(instance._checkFizzBuzz(7)).toEqual(7);
   });
 
+  it('The list item should display fizz buzz correctly', () => {
+    expect(wrapper.find("ul li").at(2).text()).toEqual(FizzBuzzConst.FIZZ);
+    expect(wrapper.find("ul li").at(4).text()).toEqual(FizzBuzzConst.BUZZ);
+    expect(wrapper.find("ul li").at(14).text()).toEqual(FizzBuzzConst.FIZZ_BUZZ);
+    expect(wrapper.find("ul li").at(6).text()).toEqual("7");
+  });
+
 });
