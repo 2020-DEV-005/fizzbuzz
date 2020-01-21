@@ -1,1 +1,3 @@
-export const FizzBuzzConst = {};
+export const FizzBuzzConst = {
+    APP_TITLE: "Fizz - Buzz"
+};
